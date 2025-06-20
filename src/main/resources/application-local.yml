@@ -1,5 +1,5 @@
 server:
-  port: 8080
+  port: 8081
 
 spring:
   datasource:
@@ -16,3 +16,12 @@ spring:
     generate-ddl: true # 오직 테스트 환경에서만 (spring.jpa.generate-ddl)
     show-sql: true
     open-in-view: false
+
+  kafka:
+    bootstrap-servers: localhost:9092
+
+jwt:
+  expires-in: 86400 # 1day
+  mobile-expires-in: 31536000
+  table-expires-in: 31536000
+  secret-key: AADfaskllew32dsfasdTG764Gds3as54dfa32s1df2a6fwlkj298GsWg86G76745ADdjnfsk
